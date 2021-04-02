@@ -61,7 +61,23 @@ Returns first value in array or null.
 
 ```js
 [('hello', 'world')].first(); // => 'hello'
+
 [].first(); // => null
 ```
 
 Why? Mostly just as a counterpoint to Object.first() above. But also returning `null` instead of `undefined` from an empty array seems more intentional.
+
+### Array.toObject()
+
+Builds an object from an array of arrays.
+First element in sub-array is used as the key in the resulting entry.
+
+```js
+const arrays = [
+  ['12', { id: '12', name: 'foo' }],
+  ['13', { id: '13', name: 'bar' }],
+];
+
+arrays.toObject();
+// => { 12: { id: '12', name: 'foo' }, 13: {id: '13', name: 'bar' }};
+```
