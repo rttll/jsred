@@ -15,3 +15,19 @@ describe('Array.prototype.first()', () => {
     expect(arr.first()).toBe(arr[0]);
   });
 });
+
+describe('Object.prototype.first()', () => {
+  test('Object.first is a function', () => {
+    expect(typeof Object.prototype.first).toBe('function');
+  });
+
+  test('Returns null from empty object', () => {
+    const emptyObject = {};
+    expect(emptyObject.first()).toBe(null);
+  });
+
+  test('Returns first key/pair', () => {
+    const obj = { foo: 'bar', blue: 'bear' };
+    expect(obj.first()).toStrictEqual({ foo: 'bar' });
+  });
+});
