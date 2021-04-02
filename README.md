@@ -4,7 +4,25 @@ Ruby-like methods Array/Object in javascript.
 
 ## Setup
 
-tbd
+Include the js file from `dist` in your project. Use a script tag like this:
+
+```js
+<script src='/path/to/jsred.x.x.x.js'></script>
+```
+
+## Development
+
+Add new tests in `./test`. And a final, basic test for the production build in `./build/index.test.js`
+
+Add new methods in `./src/functions`
+
+```js
+// Test
+yarn test
+
+// Build
+yarn build
+```
 
 ## Usage
 
