@@ -35,6 +35,26 @@ obj.map((k, v) => {
 // => [{foo: 'hello bar', blue: 'hello bix'}]
 ```
 
+### Object.prototype.keys()
+
+Returns an array of key names from an object.
+
+```js
+const obj = { foo: 'bar' };
+obj.keys();
+// => ['foo']
+```
+
+### Object.prototype.values()
+
+Returns an array of property values from an object.
+
+```js
+const obj = { foo: 'bar' };
+obj.values();
+// => ['bar']
+```
+
 ### Array.first()
 
 Returns first value in array or null.
