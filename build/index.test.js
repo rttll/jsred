@@ -22,4 +22,10 @@ describe('All methods registered correctly', () => {
   test('map', () => {
     expect(typeof {}.map).toBe('function');
   });
+
+  test('includes', () => {
+    expect(typeof [].includes).toBe('function');
+    expect(typeof ''.includes).toBe('function');
+    expect(typeof {}.includes).toBe('function');
+  });
 });
