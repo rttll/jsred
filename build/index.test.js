@@ -2,6 +2,10 @@ const version = require('../package.json').version;
 require(`../dist/jsred.${version}`);
 
 describe('All methods registered correctly', () => {
+  test('isEmpty', () => {
+    expect(typeof [].isEmpty).toBe('function');
+  });
+
   test('first', () => {
     expect(typeof [].first).toBe('function');
     expect(typeof {}.first).toBe('function');
