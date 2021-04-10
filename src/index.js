@@ -5,15 +5,3 @@ import map from './functions/map';
 import to_object from './functions/to_object';
 import includes from './functions/includes';
 import isEmpty from './functions/is_empty';
-
-export { first };
-export { keys };
-export { values };
-export { map };
-export { to_object };
-export { includes };
-export { isEmpty };
-
-const jsred = { first, keys, values, map, to_object, includes, isEmpty };
-
-export default jsred;
